@@ -38,22 +38,22 @@
         "required": true
       },
       "STRING_SESSION": {
-        "description": "جلسه بايروجرام 2.",
+        "description": "جلسه بايروجرام 2 من هنا @termux1bot",
         "value": "",
         "required": true
       },
       "HEROKU_API_KEY": {
-        "description": "مفتاح اب كي هراكو",
+        "description": "مفتاح API هيروكو",
         "value": "",
         "required": false
       },
       "HEROKU_APP_NAME": {
-        "description": "اول اسم كتبتو فوق",
+        "description": "اول اسم كتبته فوق App Name",
         "value": "",
         "required": false
       },
       "LOGGER_ID": {
-        "description": "ايدي الجروب وضيف قبلو -100",
+        "description": "ايدي الجروب وضيف قبله -100",
         "value": "",
         "required": true
       }
