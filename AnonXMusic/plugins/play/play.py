@@ -29,7 +29,6 @@ from config import BANNED_USERS, lyrical
     filters.command(
         [
             "شغل",
-            "ش", 
             "#شغل", 
             "تشغيل", 
             "#تشغيل", 
@@ -40,7 +39,7 @@ from config import BANNED_USERS, lyrical
             "/play",
             "/cplay",
             "/vplay",
-            "/cvplay",
+            "ش",
         ], 
     "")
     & ~BANNED_USERS
