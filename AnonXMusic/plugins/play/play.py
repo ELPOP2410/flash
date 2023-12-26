@@ -39,7 +39,7 @@ from config import BANNED_USERS, lyrical
             "/play",
             "/cplay",
             "/vplay",
-            "ش",
+            "/cvplay",
         ], 
     "")
     & ~BANNED_USERS
