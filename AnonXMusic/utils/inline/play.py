@@ -67,7 +67,14 @@ def stream_markup_timer(_, chat_id, played, dur):
             )
        ],[
         InlineKeyboardButton(
-                text= "⦃ 𝐒𝐎𝐔᚜𝐀𝐕𝐀𝐓𝐀𝐑᚛𝐑𝐂𝐄 ⦄", url=f"https://t.me/sourceav"), 
+                text=_["• ᗩძძ TᏂᥱ ᙖ᥆T T᥆ Y᥆ᥙɾ ᘜɾ᥆ᥙρ •"], url=f"https://t.me/{app.username}?startgroup=true"
+        ],
+        [
+        InlineKeyboardButton(
+                text= "• S᥆υᖇᥴᥱ ᖴᥣᥲ᥉Ꮒ •", url=f"https://t.me/FLS_44"),
+        ],
+        [
+        InlineKeyboardButton(text="• ᥴᥣ᥆᥉ᥱ •", callback_data="close"),
         ],
     ]
     return buttons
@@ -83,7 +90,16 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],[
         InlineKeyboardButton(
-                text= "⦃ 𝐒𝐎𝐔᚜𝐀𝐕𝐀𝐓𝐀𝐑᚛𝐑𝐂𝐄 ⦄", url=f"https://t.me/sourceav"), 
+                text=_["• ᗩძძ TᏂᥱ ᙖ᥆T T᥆ Y᥆ᥙɾ ᘜɾ᥆ᥙρ •"], url=f"https://t.me/{app.username}?startgroup=true"
+        ],
+        [
+        InlineKeyboardButton(
+                text= "• S᥆υᖇᥴᥱ ᖴᥣᥲ᥉Ꮒ •", url=f"https://t.me/FLS_44"),
+        ],
+        [
+        InlineKeyboardButton(
+                text=_["• ᥴᥣ᥆᥉ᥱ •"],
+                callback_data="close",
         ],
     ]
     return buttons
