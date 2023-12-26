@@ -29,7 +29,7 @@ class Anony(Client):
         try:
             await self.send_message(
                 chat_id=config.LOGGER_ID,
-                text=f"<u><b>» تـم دخـولـ البـوتـ الـي عـالـم فــلاش بـنـجـاح :</u></b>\n <b>اذا وجهتك مشكله كم بتواصل مع جروب الدعم</b>\n<b>جروب الدعم : @FLS_45</b> ",
+                text=f"<u><b>❃ تم تفعيل البوت بنجاح",
             )
         except (errors.ChannelInvalid, errors.PeerIdInvalid):
             LOGGER(__name__).error(
@@ -38,7 +38,7 @@ class Anony(Client):
             exit()
         except Exception as ex:
             LOGGER(__name__).error(
-                f"فشل البوت في الوصول لمجموعة او قناه السجل\n  بسبب : {type(ex).__name__}."
+                f"فشل البوت في الوصول لمجموعة او قناة السجل\n  بسبب : {type(ex).__name__}."
             )
             exit()
 
@@ -48,7 +48,7 @@ class Anony(Client):
                 "يرجي رفع البوت و المساعد ادمن في جروب او قناة السجل."
             )
             exit()
-        LOGGER(__name__).info(f"تم تشغييل {self.name} علي سورس فــلاش")
+        LOGGER(__name__).info(f"تم تشغيل {self.name} علي سورس فلاش")
 
     async def stop(self):
         await super().stop()
