@@ -67,7 +67,7 @@ def stream_markup_timer(_, chat_id, played, dur):
             )
        ],[
         InlineKeyboardButton(
-                text= "• S᥆υᖇᥴᥱ ᖴᥣᥲ᥉Ꮒ •", url=f"https://t.me/FLS_44"), 
+                text= "⦃ 𝐒𝐎𝐔᚜𝐀𝐕𝐀𝐓𝐀𝐑᚛𝐑𝐂𝐄 ⦄", url=f"https://t.me/sourceav"), 
         ],
     ]
     return buttons
@@ -83,7 +83,7 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],[
         InlineKeyboardButton(
-                text= "• S᥆υᖇᥴᥱ ᖴᥣᥲ᥉Ꮒ •", url=f"https://t.me/FLS_44"), 
+                text= "⦃ 𝐒𝐎𝐔᚜𝐀𝐕𝐀𝐓𝐀𝐑᚛𝐑𝐂𝐄 ⦄", url=f"https://t.me/sourceav"), 
         ],
     ]
     return buttons
