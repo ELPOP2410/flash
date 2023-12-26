@@ -132,6 +132,6 @@ async def restart_(_, message):
     except:
         pass
     await response.edit_text(
-        "❃ بدأت عملية إعادة التشغيل، يرجى الانتظار لبضع ثوان حتى يبدأ البوت ..."
+        "» بدأت عملية إعادة التشغيل، يرجى الانتظار لبضع ثوان حتى يبدأ البوت ..."
     )
     os.system(f"kill -9 {os.getpid()} && bash start")
