@@ -8,7 +8,7 @@ from AnonXMusic.utils.decorators.language import language
 from config import BANNED_USERS
 
 
-@app.on_message(filters.command(["/blchet","blchat","/blacklistchat","blacklistchat","بلاك ليست"], "") & SUDOERS)
+@app.on_message(filters.command(["/blchet","blchat","/blacklistchat","blacklistchat","بلاك ليست","بلوك"], "") & SUDOERS)
 @language
 async def blacklist_chat_func(client, message: Message, _):
     if len(message.command) != 2:
@@ -28,7 +28,7 @@ async def blacklist_chat_func(client, message: Message, _):
 
 
 @app.on_message(
-    filters.command(["whitelistchat","/whitelistchat","/unblacklistchat","unblacklistchat", "unblchat","/unblchat","ونبلاك"],"") & SUDOERS
+    filters.command(["whitelistchat","/whitelistchat","/unblacklistchat","unblacklistchat", "unblchat","/unblchat","ونبلاك","الغاء البلوك"],"") & SUDOERS
 )
 @language
 async def white_funciton(client, message: Message, _):
@@ -43,7 +43,7 @@ async def white_funciton(client, message: Message, _):
     await message.reply_text(_["black_9"])
 
 
-@app.on_message(filters.command(["blchats","/blchats","blacklistedchats","/blacklistedchats","البلاك ليست","القائمه السوداء"],"") & ~BANNED_USERS)
+@app.on_message(filters.command(["blchats","/blchats","blacklistedchats","/blacklistedchats","البلاك ليست","القائمه السوداء","قائمه البلوك"],"") & ~BANNED_USERS)
 @language
 async def all_chats(client, message: Message, _):
     text = _["black_7"]

@@ -6,7 +6,7 @@ from AnonXMusic.utils.database import add_off, add_on
 from AnonXMusic.utils.decorators.language import language
 
 
-@app.on_message(filters.command(["logger","السجل"], "") & SUDOERS)
+@app.on_message(filters.command(["logger","السجل","سجل"], "") & SUDOERS)
 @language
 async def logger(client, message, _):
     usage = _["log_1"]
