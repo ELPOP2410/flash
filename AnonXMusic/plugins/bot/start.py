@@ -96,7 +96,7 @@ async def start_pm(client, message: Message, _):
             )
 
 
-@app.on_message(filters.command(["/start","عايش"], "") & ~BANNED_USERS)
+@app.on_message(filters.command(["/start","عايش","انت عايش"], "") & ~BANNED_USERS)
 @LanguageStart
 async def start_gp(client, message: Message, _):
     out = start_panel(_)
