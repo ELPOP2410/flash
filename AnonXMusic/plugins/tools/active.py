@@ -12,7 +12,7 @@ from AnonXMusic.utils.database import (
 )
 
 
-@app.on_message(filters.command(["activevc", "activevoice","المكالمات النشطه"],"") & SUDOERS)
+@app.on_message(filters.command(["activevc", "المكالمات","المكالمات النشطه"],"") & SUDOERS)
 async def activevc(_, message: Message):
     mystic = await message.reply_text("❃ انتظر لحظه من فضلك يتم الكشف الان ...")
     served_chats = await get_active_chats()
@@ -71,6 +71,6 @@ async def activevi_(_, message: Message):
         await mystic.edit_text(f"❃ لا يوجد كول فيديو نشط الان {app.mention}.")
     else:
         await mystic.edit_text(
-            f"<b>❃ المحادثات فيديو النشطه الان :</b>\n\n{text}",
+            f"<b>❃ محادثات الفيديو النشطه الان :</b>\n\n{text}",
             disable_web_page_preview=True,
         )
