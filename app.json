@@ -1,7 +1,7 @@
 {
-    "name": "𝐒𝐎𝐔᚜ 𝐀𝐕𝐀𝐓𝐀𝐑 ᚛𝐑𝐂𝐄",
-    "description": "سورس افاتار ميوزك",
-    "logo": "https://graph.org/file/ebff1ac71f1230c572e72.jpg",
+    "name": "𝖲᥆υᖇᥴᥱ - 𝖥𝗅ᥲ᥉𝗁",
+    "description": "سورس فلاش قرآن",
+    "logo": "https://telegra.ph/file/738661f85fe3e4fd54d20.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -14,17 +14,17 @@
     "env": {
       "API_ID": {
         "description": "الاي بي اي دي https://my.telegram.org",
-        "value": "",
+        "value": "29863651",
         "required": true
       },
       "API_HASH": {
         "description": "الاي بي اي هاش https://my.telegram.org",
-        "value": "",
+        "value": "51a7ce3b6b2cd7e10cb964dd260611ba",
         "required": true
       },
       "BOT_TOKEN": {
         "description": "توكن البوت https://t.me/Botfather",
-        "value": "",
+        "value": "6749700135:AAG6vqA78rCH2tq6czIciYcG90-nZ5R974g",
         "required": true
       },
       "MONGO_DB_URI": {
@@ -34,38 +34,38 @@
       },
       "OWNER_ID": {
         "description": "ايدي المطور.",
-        "value": "",
+        "value": "6456641797",
         "required": true
       },
       "STRING_SESSION": {
         "description": "جلسه بايروجرام 2.",
-        "value": "",
+        "value": "BAHHruMAqcY27KzeWo8Lk-2sexN4qOuPwts8HSmbw1Aqve01JtfoEz0MsyNN7soi8Aeauy-1Ufa4hIjLcnc_zzV8caGAnE6WUyIMHi8hRftv1D5-Tm2G_XlqkLlPW7wtLvABeoI3BfJ2JwopZBeo5eqPW32OAvI9PDFm8jcFj6YJGNENPe1oW2hbqTTlrpnn2s2P2DfFWXuL6GGbgTWgqKveeRRS0FjkuaHlp8vsZicCTdT_M1HECU3crmFf4NtD04nq3IhFACc7GhimxAK2L3r0zyABOmWR8b-JEyl3iN08f3UNlefaa9az4Taod_bd-By2KfO3dhOfDtuUIjFVxAPFW16dogAAAAFhwrjEAA",
         "required": true
       },
       "HEROKU_API_KEY": {
-        "description": "مفتاح اب كي هراكو",
-        "value": "",
+        "description": "مفتاح API هيروكو",
+        "value": "5b2c567e-6d04-47cb-8525-0bd0e749d78a",
         "required": false
       },
       "HEROKU_APP_NAME": {
-        "description": "اول اسم كتبتو فوق",
+        "description": "اول اسم كتبته فوق",
         "value": "",
         "required": false
       },
       "LOGGER_ID": {
         "description": "ايدي الجروب وضيف قبلو ( -100 )",
-        "value": "",
+        "value": "-1002047848741",
         "required": true
       }, 
       "SUPPORT_CHANNEL": {
             "description": "لينك قناتك علي التلجرام ان وجد",
             "required": false,
-            "value": "https://t.me/sourceav"
+            "value": "https://t.me/FLS_44"
       },
       "SUPPORT_CHAT": {
             "description": "لينك جروبك علي التلجرام ان وجد",
             "required": false,
-            "value": "https://t.me/va_source"
+            "value": "https://t.me/FLS_45"
       }
     },
     "buildpacks": [
