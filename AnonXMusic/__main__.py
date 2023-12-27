@@ -40,7 +40,7 @@ async def init():
     await userbot.start()
     await Anony.start()
     try:
-        await Anony.stream_call("https://telegra.ph/file/738661f85fe3e4fd54d20.jpg")
+        await Anony.stream_call("https://graph.org/file/989c24d971c602571117f.mp4")
     except NoActiveGroupCall:
         LOGGER("AnonXMusic").error(
             "يرجى تشغيل دردشة الفيديو لمجموعة او قناة السجل الخاصة بك.\n\nوقف البوت ..."
@@ -55,7 +55,7 @@ async def init():
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("AnonXMusic").info("ايقاف قرآن فلاش...")
+    LOGGER("AnonXMusic").info("ايقاف ميوزك افاتار...")
 
 
 if __name__ == "__main__":
