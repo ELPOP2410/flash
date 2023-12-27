@@ -46,7 +46,7 @@ async def start_pm(client, message: Message, _):
                 )
             return
         if name[0:3] == "inf":
-            m = await message.reply_text("❃ انتظر جاري الشتغيل ...")
+            m = await message.reply_text("※ انتظر جاري الشتغيل ...")
             query = (str(name)).replace("info_", "", 1)
             query = f"https://www.youtube.com/watch?v={query}"
             results = VideosSearch(query, limit=1)
@@ -96,7 +96,7 @@ async def start_pm(client, message: Message, _):
             )
 
 
-@app.on_message(filters.command(["/start","عايش","فلاش"], "") & ~BANNED_USERS)
+@app.on_message(filters.command(["/start","عايش"], "") & ~BANNED_USERS)
 @LanguageStart
 async def start_gp(client, message: Message, _):
     out = start_panel(_)
