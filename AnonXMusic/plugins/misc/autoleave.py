@@ -65,7 +65,7 @@ async def auto_end():
                 try:
                     await app.send_message(
                         chat_id,
-                        "❃ تم مغادره الحساب المساعد من الكول تلقائيًا لانه لم يجد مستمعين.",
+                        "❃ تم مغادرة المساعد الكول لأنه لم يجد مستمعين.",
                     )
                 except:
                     continue
