@@ -112,13 +112,13 @@ async def update_(client, message, _):
 
 @app.on_message(filters.command(["/restart","restart","اعادة تشغيل"], "") & SUDOERS)
 async def restart_(_, message):
-    response = await message.reply_text("❃ يتم اعادة تشغيل البوت انتظر ...")
+    response = await message.reply_text("يتم اعادة تشغيل البوت انتظر ...")
     ac_chats = await get_active_chats()
     for x in ac_chats:
         try:
             await app.send_message(
                 chat_id=int(x),
-                text=f"{app.mention} جاري اعادة تشغيل البوت ...\n\nيمكنك استخدام البوت بعد دقيقه من الان.",
+                text=f"{app.mention} جاري اعدات تشغيل البوت ...\n\nيمكنك استخدام البوت بعد دقيقه من الان.",
             )
             await remove_active_chat(x)
             await remove_active_video_chat(x)
@@ -132,6 +132,6 @@ async def restart_(_, message):
     except:
         pass
     await response.edit_text(
-        "❃ بدأت عملية إعادة التشغيل، يرجى الانتظار لبضع ثوان حتى يبدأ البوت ..."
+        "» بدأت عملية إعادة التشغيل، يرجى الانتظار لبضع ثوان حتى يبدأ البوت ..."
     )
     os.system(f"kill -9 {os.getpid()} && bash start")
