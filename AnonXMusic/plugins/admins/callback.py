@@ -159,7 +159,7 @@ async def del_back_playlist(client, CallbackQuery, _):
     elif command == "Skip" or command == "Replay":
         check = db.get(chat_id)
         if command == "Skip":
-            txt = f"❃ تم التخطي \n\n❃ بواسطة : {mention} 🥀"
+            txt = f"🕸 تم التخطي \n\n🕸 بوستط : {mention} 🥀"
             popped = None
             try:
                 popped = check.pop(0)
@@ -167,7 +167,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     await auto_clean(popped)
                 if not check:
                     await CallbackQuery.edit_message_text(
-                        f"❃ تم التخطي \n\n❃ بواسطة : {mention} 🥀"
+                        f"🕸 تم التخطي \n\n🕸 بوستط : {mention} 🥀"
                     )
                     await CallbackQuery.message.reply_text(
                         text=_["admin_6"].format(
@@ -182,7 +182,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 try:
                     await CallbackQuery.edit_message_text(
-                        f"❃ تم التخطي \n\n❃ بواسطة : {mention} 🥀"
+                        f"🕸 تم التخطي \n\n🕸 بوستط : {mention} 🥀"
                     )
                     await CallbackQuery.message.reply_text(
                         text=_["admin_6"].format(
@@ -194,7 +194,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 except:
                     return
         else:
-            txt = f"❃ تم اعادة التشغيل\n\n❃ بواسطة : {mention} 🥀"
+            txt = f"🕸 تم اعادت التشغيل\n\n🕸 بوستط : {mention} 🥀"
         await CallbackQuery.answer()
         queued = check[0]["file"]
         title = (check[0]["title"]).title()

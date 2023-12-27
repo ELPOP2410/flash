@@ -8,7 +8,7 @@ from AnonXMusic.utils.inline import close_markup
 from config import BANNED_USERS
 
 
-@app.on_message(filters.command(["/loop","/cloop","#كرر", "كرر","تكرار","#تكرار","كررها","#كررها"], "") & ~BANNED_USERS)
+@app.on_message(filters.command(["/loop","/cloop","loop", "cloop","تكرار","#تكرار","كررها","#كررها"], "") & ~BANNED_USERS)
 @AdminRightsCheck
 async def admins(cli, message: Message, _, chat_id):
     usage = _["admin_17"]
