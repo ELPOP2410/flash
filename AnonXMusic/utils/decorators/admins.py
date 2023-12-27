@@ -142,10 +142,10 @@ def AdminActual(mystic):
                             text="ʜᴏᴡ ᴛᴏ ғɪx ?",
                             callback_data="AnonymousAdmin",
                         ),
-                   ]
-               ]
-          )
-        return await message.reply_text(_["general_3"], reply_markup=upl)
+                    ]
+                ]
+            )
+            return await message.reply_text(_["general_3"], reply_markup=upl)
         if message.from_user.id not in SUDOERS:
             try:
                 member = (
